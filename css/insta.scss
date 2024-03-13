@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:600);
+$fontMain: 'Dosis', sans-serif;
+$itemPadding: 4px;
+$transDuration: 0.8s;
+$transTimeFunc: cubic-bezier(0,1,.86,1);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: $fontMain;
+  background-color: black;
+  color: white;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.text-link {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  font-size: 12px;
+  a {
+    color: rgba(white, 0.3);
+    text-decoration: none;
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+.carousel {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.slick-list {
+  overflow: visible;
+  padding: 0 $itemPadding;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-prev,
+.slick-next {
+  position: fixed;
+  bottom: 12px;
+  padding: 4px 12px;
+  font-family: $fontMain;
+  color: rgba(white, 0.5);
+  background: rgba(white, 0.2);
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  z-index: 999;
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+.slick-prev {
+  left: 12px;
+}
+
+.slick-next {
+  left: 90px;
+}
+
+.item {
+  position: relative;
+  margin: $itemPadding;
+  opacity: 0.3;
+  transform: translate3d(0, 0, 0);
+  transition: 
+    opacity $transDuration*2 $transTimeFunc,
+    transform $transDuration $transTimeFunc;
+  outline: none;
+  overflow: hidden;
+  z-index: -1;
+  img {
+    width: 100%;
+    filter: blur(6px);
+    transform: rotate(0) translate3d(0, 0, 0);
+    transition: filter $transDuration*2 $transTimeFunc;
+  }
+  &.slick-animate {
+    opacity: 1;
+    z-index: 99;
+    transition: 
+      filter $transDuration*2 $transTimeFunc,
+      opacity $transDuration/2 $transTimeFunc,
+      transform $transDuration/2 $transTimeFunc;
+    @media (min-width: 480px) {
+      transform: translate3d(0, 0, 0) scale(3);
+    }
+    img {
+      filter: blur(0);
+    }
+  }
+}

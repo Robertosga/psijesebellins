@@ -1,0 +1,72 @@
+body {
+   /* background-image: url('/img/fd/fdo.jpg');*/
+    background-color: #E4E2D6;
+    background-size: cover; /* para ajustar o tamanho da imagem ao tamanho da tela */
+    background-repeat: no-repeat; /* para evitar a repetição da imagem */
+    
+
+}
+.navbar-collapse {
+  justify-content: center; /* Centraliza o menu no modo mobile */
+}
+.navbar-nav {
+  text-align: center; /* Centraliza os itens do menu no modo mobile */
+}
+.carousel-item img {
+    max-height: 400px; /* Altura máxima das imagens do carrossel */
+}
+.accordion-button {
+    background-color: #f5f5f5; /* Cor de fundo dos botões de collapse (cor salmon clara) */
+    color: #006400; /* Cor do texto dos botões de collapse (verde musgo) */
+}
+#sobre-mim {
+     /* Adapte a cor de fundo conforme desejado */
+    padding: 40px 0; /* Adapte o espaçamento interno conforme desejado */
+}
+
+.sobre-mim-texto {
+    text-align: justify; /* Justifica o texto para uma melhor apresentação */
+}
+
+.sobre-mim-texto p {
+    margin-bottom: 15px; /* Adapte o espaçamento entre os parágrafos conforme desejado */
+}
+
+.img-fluid {
+    max-width: 320px;
+    height: auto;
+    border: 7px solid #C3AD9A; /* Adapte a cor da borda conforme desejado */
+    border-radius: 5px; /* Adapte o raio do canto conforme desejado */
+}
+.img-fluid2 {
+    margin-left: 20px;
+    max-width: 500px;
+    height: auto;
+    border: 0px solid #0e220e; /* Adapte a cor da borda conforme desejado */
+    border-radius: 5px; /* Adapte o raio do canto conforme desejado */
+}
+.texto-lateral {
+    width: 40%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.fontes {
+
+    font-family: 'sans-serif';
+    font-style: italic;
+
+}
+.insta{
+    width: 100%;
+    height: 200px;
+    
+
+}
+@media (max-width: 768px) {
+    form, .texto-lateral {
+        width: 100%;
+        float: none;
+        
+}
+}
