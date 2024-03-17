@@ -1,6 +1,6 @@
 body {
-   /* background-image: url('/img/fd/fdo.jpg');*/
-    background-color: #E4E2D6;
+    background-image: url('img/fd/7f3dee67-1236-44d5-95e5-5ec9aa2e7dac.jpg');
+    /*background-color: #E4E2D6;*/
     background-size: cover; /* para ajustar o tamanho da imagem ao tamanho da tela */
     background-repeat: no-repeat; /* para evitar a repetição da imagem */
     
@@ -40,7 +40,7 @@ body {
 }
 .img-fluid2 {
     margin-left: 20px;
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
     border: 0px solid #0e220e; /* Adapte a cor da borda conforme desejado */
     border-radius: 5px; /* Adapte o raio do canto conforme desejado */
