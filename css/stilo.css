@@ -63,10 +63,22 @@ body {
     
 
 }
+.lrodape{
+    margin-left: 5%
+
+}
 @media (max-width: 768px) {
     form, .texto-lateral {
         width: 100%;
         float: none;
         
+}
+.lrodape{
+    margin-left: 20%
+
+}
+.lrodape2{
+    margin-left: 20%
+
 }
 }
